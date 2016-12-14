@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='js/generic.style.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <a name="home"></a>
+    <div id="root" class="container">
+        <div class="row">
+            <h1 class="text-muted">
+                <div class="col-md-8 col-xs-12">
+                    VISIR
+                    <small>Virtual Instrument Systems in Reality</small>
+                </div>
+                <div class="col-md-4">
+                    <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Start Experimenting <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="/auth/google">Google</a></li>
+                        <li class="disabled"><a href="/auth/facebook">Facebook</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="pull-right btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Swedish</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </h1>
+            
+            
+            
+            
+            <!--<nav class="navbar navbar-default navbar-fixed-top">
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dropdown link</a></li>
+                                <li><a href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </nav-->
+        </div>
+
+        <div class="jumbotron">
+            <h1>Welcome</h1>
+            <p>Welcome to the open electronics laboratory.</p>
+            <span>
+                Here you will find the resources needed to experiment in electronics via the internet. We have developed a system where you can make electronic experiments, right here in your browser. We supply basic equipment, such as oscilloscope, multimeter, function generator and power supply. With these and a number of electronic components you can build circuits on our virtual breadboard. None of the measurements are simulated. The circuits you build will be formed and measured on, and the real measurement results will be displayed.
+            </span>
+            <br/>
+            <br/>
+            <p>
+                Interested? Check out our <a href="#demo">demo</a>.
+            </p>
+        </div>
+
+        <div class="col-xs-6 col-md-6 pull-right">
+            <div class="thumbnail">
+            <img src="/static/oscilloscope.jpeg" alt="...">
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2><a name="about"></a>About</h2>
+            <h3>Short history</h3>
+            <p>
+                The remote laboratory project at BTH started in 1999 and the first prototype, a lab station with Internet access providing some fixed experiments in circuit analysis, was setup in a small closed room and released in the year 2000. It was tested in regular campus courses. The second prototype released in the year 2002 represented a major step forward towards an electronics laboratory capable of emulating a traditional one.
+            </p>
+
+            <h3>Papers</h3>
+            <p>
+                References to papers presenting the laboratory can be found here. Papers are password protected if the author has transferred the copyright to another organization.
+            </p>
+
+            <h3>Flyer</h3>
+            <p>
+                A brief introduction and description can be found here.
+            </p>
+
+            <h3>User manual</h3>
+            <p>
+                For students there is a student manual, that describes how to get started experimenting in the laboratory.
+            </p>
+
+            <h3>Teacher manual</h3>
+            <p>
+                There is a teachers manual that describes how to manage experiments and students in the system. For example how to add new experiments.
+            </p>
+        </div>
+
+
+        <div class="col-xs-6 col-md-6 pull-right">
+            <div class="thumbnail">
+                <img src="/static/opbreadboard.jpeg" alt="...">
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2><a name="demo"></a>Demo</h2>
+            <h3>Demonstration</h3>
+
+            <p>
+                To give an idea of how the electronics laboratory is operated, a few video clips are available, demonstrating:
+            <p>
+
+            <ol>
+                <li>
+                    How to measure the resistance of a resistor using the multi-meter if you have problems interpreting the color code. Show clip (2.2MB)
+                </li>
+                <li>
+                    How to measure U1 and U2 defined in the first circuit of an excerpt of a lab instruction manual using the oscilloscope. Please download and print the excerpt before showing this clip. Show clip (1.6MB)
+                </li>
+                <li>
+                    How to perform an experiment on the operational amplifier uA741. Show clip (1.6 MB)
+                </li>
+            </ol>
+
+            <h3>Guest login</h3>
+            <p>
+                The laboratory is open for guests when its not used in regular lab sessions. Guest sessions are limited to 30 minutes.
+            </p>
+            <p>
+                To be able to perform the guest experiments you will have to download its lab instruction manual. It describes AC experiments using passive components and experiments on an operational amplifier. When you start the experiment, you can choose from two laboratory setups at the bottom of the screen, choosing either the AC experiments or the op amp ones. This will provide all the needed components for either experiment. (No additional components need to be added).
+            </p>
+            <p>
+                When doing the measurements, a virtual instructor will check that the circuits wired will not damage components or instruments used. Please refer to the FAQ if you are not familiar with a breadboard. The oscilloscope manual can be downloaded from manufacturers homepage. Please note that not all functions of the instruments are implemented.
+            </p>
+
+            <p>
+                After logging in choose the Guest course in the left menu and press start experimenting.
+            </p>
+
+            <p>Login in as a guest</p>
+        </div>
+
+        <div class="panel">
+            <h3><a name="faq"></a>Frequently asked questions</h3>
+            <strong>What are the system requirements to use the laboratory?</strong>
+            <p>
+                You need a modern web browser supporting HTML5 and network connectivity. The bandwidth requirements are very low.
+            </p>
+
+            <strong>How does the instruments work?</strong>
+            <p>
+                The instruments are computer based. They consists of two parts, a extension card in the server computer and a virtual front panel displayed on your computer screen. The virtual front panels are based on photographs from common desktop instruments. Most of the functions of these instruments are implemented. Manufacturer and model number are visible.
+            </p>
+
+            <strong>How does the breadboard work?</strong> 
+            <p>
+                Refer to the figure below.
+                <img class="thumbnail" src="/static/howbreadboard.jpg" alt="..." />
+            </p>
+            
+
+            <strong>When I am trying to make a measurement, I get 'unable to connect'.</strong>
+            <p> 
+                Probably this is because the client software fails to connect to our server. Either its because our server is down or there is a problem with your network connection.
+                All communication goes over http or https over ports 80, 8080 or 443.
+            </p>
+
+            <strong>
+                Where can I find documentation for the client software?
+            </strong> 
+            <p>
+                We have tried to make our virtual instruments as like the original as possible. Therefore we refer to the hardware instrument manuals.
+            </p>
+
+            <strong>
+                What does GND stand for?
+            </strong>
+            <p> 
+                GND is protective earth or ground. All instruments are relative to protective earth, except the +/-25V channels on the DC power supply, which are relative to the floating COM node. The COM node can be connected to protective earth if needed.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="" style="text-align: center">
+                <img style="height: 130px;" src="/static/bthlogo.svg" alt="...">
+            </div>
+        </div>
+        
+        <footer class="footer" style="text-align: center">
+            <p>&copy; 2016 Johan Zackrisson (at) Blekinge Institute of Technology</p>
+        </footer>
+    </div>
+</body>
+
+</html>
