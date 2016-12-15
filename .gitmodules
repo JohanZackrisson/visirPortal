@@ -1,0 +1,3 @@
+[submodule "visir_html5"]
+	path = visir_html5
+	url = https://github.com/JohanZackrisson/visir_html5
